@@ -79,6 +79,11 @@ Error examples:
 
 When using the -f (or --save) flag this will save two files. One contains the video and audio parameters the other contains a Thumbnail preset. When this flag is excluded, the output of the script will just print on the terminal screen.
 
+#### Known issues
+
+- If you use the value `auto` for *Audio Sample Rate* or *Bit Rate* this script will fail.
+- If your preset has thumbnail generation and you use the `-i` flag, this script will fail. Workaround: Just pass the arguments `-r, -p, -c`
+
 ## License
 
 This library is licensed under the Apache 2.0 License.
